@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
     <meta charset="UTF-8">
     <title>Регистрация</title>
 </head>
+
 <body>
 <h1>Регистрация</h1><br><hr>
-<form method="post">
+<form method="post" action="/reg">
     {{ form.name.label }}<br>
     {{ form.name }}<br>
     {{ form.email.label }}<br>
